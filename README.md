@@ -1,22 +1,35 @@
-# 🍽️ Project: Simple API 2 - Restaurant
+# 🍝Restaurant Resources
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone working at or managing a restaurant. 
+Front-end app for restaurant staff. Type in an ingredient and the app finds a recipe that uses it, then shows the dish name and its full ingredient list.
 
-### How to submit your code for review:
+[Try out Restaurant Resource here!](https://restresources.netlify.app/)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## Preview
 
-Example:
+![Restaurant Resources Screenshot](restaurantresources-screengrab.png)
+
+## Features
+
+- Search for recipes by typing an ingredient
+- Shows the name of a dish that uses that ingredient
+- Lists every ingredient in the dish, which is helpful for planning a menu or checking what to have in stock
+
+## Built With
+
+- HTML, CSS and JavaScript
+- Fetch API to request data from [Recipe API](https://recipeapi.io)
+
+## How to Use
+
+1. Clone repo
+2. Get an API key from Recipe API
+3. Create a file called `config.js` in the main folder and add your API key:
+
+```javascript
+const API_KEY = 'your-api-key-here';
 ```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+The `config.js` file is listed in `.gitignore`, so your key stays out of the repo.
+
+4. Open `index.html` in your browser
+5. Type an ingredient and click **Check Ingredient**
