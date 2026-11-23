@@ -13,9 +13,11 @@ function getRecipe() {
     .then((data) => {
       console.log(data);
       const ingredientStr = [];
+      const recipeDish = data.data[0].name;
       data.data[0].ingredients.map((element) =>
         ingredientStr.push(element.name),
       );
+      document.querySelector('h2').innerText = recipeDish;
       document.querySelector('h3').innerText = ingredientStr.join(', ');
     });
 }
